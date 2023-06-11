@@ -1,0 +1,21 @@
+:root {
+
+    --primary-color: #43c67a;
+    --primary-logo-color: #4caf50;
+    --text-color: #f1f1f1;
+    --text-color-mute:#b9b8b8;
+    --primary-bg-color: rgb(36, 37, 50);
+    --secondry-bg-color: rgb(63, 65, 95);
+    --primary-font: "IRANSans";
+    --secondry-font: "BoldIRANSans";
+
+
+}
+
+
+.light {
+    --text-color: #0c0c0c;
+    --text-color-mute:#4b4a4a;
+    --primary-bg-color: rgb(255, 255, 255);
+    --secondry-bg-color: rgb(47, 48, 65);
+}
