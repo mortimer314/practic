@@ -36,6 +36,7 @@
     
 }
 .footer__shape svg {
+  margin-top: -1px;
     fill: var(--primary-bg-color);
 }
 .footer__content{
