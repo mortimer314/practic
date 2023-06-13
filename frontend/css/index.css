@@ -2,6 +2,7 @@
 @import "./fonts.css";
 @import "./default.css";
 @import "./header.css";
+@import "./helper-class.css";
 @import "./course-box.css";
 /* @import "./helper-class.css"; */
 
@@ -24,6 +25,55 @@
 .header__shape svg{
     fill: var(--primary-bg-color);
 }
+
+
+
+.courses-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.courses-header__right {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.courses-header__title {
+  font-size: 2rem;
+}
+
+.courses-header__text {
+  font-size: 1.4rem;
+}
+
+.courses-header__link {
+
+  background-color: var(--primary-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  transition: all 400ms;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.courses-header__link:hover {
+  color: var(--white-color);
+  background-color: aqua;
+  box-shadow: 1px 1px 1px var(--white-color);
+  color: #000;
+}
+
+.courses-header__icon {
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
 .footer{
   background-color: var(--primary-bg-color-footer);
   color: var(--primary-color-footer);
@@ -103,7 +153,7 @@
   }
   
   .about-us__header {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
   }
   
@@ -142,6 +192,9 @@
 
   
 /* Start Popular Courses Styles */
+.swiper{
+  padding: 6rem;
+}
 .popular, .presell {
     margin: 5rem 0;
   }
@@ -195,10 +248,20 @@
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 400ms;
+    box-shadow: 1px 1px 1px #000;
   }
   
   .articles-header__link:hover {
-    color: var(--white-color);
+   
+      color: var(--white-color);
+      background-color: aqua;
+      box-shadow: 1px 1px 1px var(--white-color);
+      color: #000;
+    
   }
   
   .articles-header__icon {

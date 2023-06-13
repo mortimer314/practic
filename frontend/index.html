@@ -7,15 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Fav icon -->
   <link rel="icon" href="./images/favicon/Luma-Green-icon.png">
-
+  
   <!-- CDN Bootsrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+  integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+  <!-- Reset Browser CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="./vendor/Font-awesome/all.min.css">
-  <!-- Reset Browser CSS -->
-  <link rel="stylesheet" href="./css/reset.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./vendor/swiper/swiper.css">
 
   <link rel="stylesheet" href="./css/index.css">
   <title>Home Page</title>
@@ -572,7 +574,7 @@
       <div class="container">
         <div class="about-us__header">
           <span class="about-us__title title">ما چه کمکی بهتون میکنیم؟</span>
-          <span class="about-us__subtitle">از اونجایی که آکادمی آموزشی سبزلرن یک آکادمی خصوصی هست</span>
+
         </div>
 
         <div class="container">
@@ -638,15 +640,15 @@
 
     <!-- Start Popular Courses -->
 
-    <div class="popular ">
+    <div class="popular container-fluid">
       <div class="container">
         <div class="popular__header">
           <span class="popular__title title">محبوب ترین دوره ها</span>
         </div>
 
         <div class="popular__slider">
-          <div class="swiper swiper-container">
-            <div class="swiper-wrapper">
+          <div class="swiper mySwiper swiper-container">
+            <div class="swiper-wrapper " id="popular-courses-swiper">
               <div class="swiper-slide">
                 <div class="course-box">
                   <a href="#">
@@ -808,6 +810,10 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+            <div class="swiper-pagination"></div>
+
           </div>
         </div>
       </div>
@@ -817,15 +823,15 @@
 
     <!-- Start Pre-sell Courses -->
 
-    <div class="presell">
+    <div class="presell container-fluid">
       <div class="container">
         <div class="presell__header">
           <span class="presell__title title">دوره های در حال پیش فروش</span>
         </div>
 
         <div class="presell__slider">
-          <div class="swiper swiper-container">
-            <div class="swiper-wrapper">
+          <div class="swiper mySwiper2  swiper-container">
+            <div class="swiper-wrapper" id="persell-courses-swiper">
               <div class="swiper-slide">
                 <div class="course-box">
                   <a href="#">
@@ -987,6 +993,10 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+            <div class="swiper-pagination"></div>
+
           </div>
         </div>
       </div>
@@ -996,7 +1006,7 @@
 
     <!-- Start Articles -->
 
-    <section class="articles">
+    <section class="articles container-fluid">
       <div class="container">
 
         <div class="articles-header">
@@ -1166,6 +1176,11 @@
   <script src="./vendor/Font-awesome/all.min.js"></script>
   <script src="./js/index.js"></script>
 
+  <!-- swiper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+  <script src="./vendor/swiper/app.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
