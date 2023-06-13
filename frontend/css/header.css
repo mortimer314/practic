@@ -60,11 +60,12 @@
 
 .main-header__link {
     display: block;
+    color: white;
 }
 
 .main-header__dropdown-link {
     display: block;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0.8rem;    color: white
 }
 
 .main-header__dropdown-link:hover {
