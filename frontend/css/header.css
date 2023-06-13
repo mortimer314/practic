@@ -1,7 +1,7 @@
 /* Start Topbar Styles */
 .top-bar {
     padding: 1rem 0;
-    background-color: rgba(47, 48, 65, 0.1);
+    background-color: rgba(47, 48, 65, 0.727);
     color: var(--text-color-mute);
 
 }
@@ -178,6 +178,8 @@
     font-size: 2rem;
     color: #bab8b8;
 }
+
+
 
 /* mobile menu styles */
 
